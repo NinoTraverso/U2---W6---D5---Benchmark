@@ -12,43 +12,122 @@
     />
   </head>
   <body>
-    <nav class="navbar bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
-            alt="Logo"
-            width="70"
-            height="30"
-            class="d-inline-block align-text-top"
-          />
-        </a>
+    <nav class="navbar bg-dark text-light d-flex justify-content-between">
+      <div class="d-flex align-content-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
+              alt="Logo"
+              width="86"
+              height="36"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+        <div class="d-flex pt-2">
+            <p class="px-3"><a href="#" class="text-decoration-none text-light">Home</a></p>
+            <p class="px-3"><a href="#" class="text-decoration-none text-light fw-bold">Tv Shows</a></p>
+            <p class="px-3"><a href="#" class="text-decoration-none text-light">Home</a></p>
+            <p class="px-3"><a href="#" class="text-decoration-none text-light">Home</a></p>
+            <p class="px-3"><a href="#" class="text-decoration-none text-light">Home</a></p>
+        </div>
+      </div>
+      <div class="text-light d-flex justify-content-end">
+        <div>
+            <a href="#" class="text-decoration-none text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </a>
+          </div>
+        <div class="px-3">
+          <p><a href="#" class="text-decoration-none text-light">KIDS</a></p>
+        </div>
+        <div>
+            <a href="#" class="text-decoration-none text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                  </svg>
+            </a>
+          </div>
+          <div class="dropdown w-25 d-inline-flex justify-content-around">
+            <a class="btn btn-dark dropdown-toggle w-25 p-0 border border-0 mx-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img id="avatarImage" src="./Netflix-assets/Netflix-assets/assets/avatar.png" alt="avatarImage" class="w-100">
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Account</a></li>
+              <li><a class="dropdown-item" href="#">Setting</a></li>
+              <li><a class="dropdown-item" href="#">Change Account</a></li>
+            </ul>
+          </div>
       </div>
     </nav>
-    <header class="d-flex">
-      <div>
-        <h3>TV Shows</h3>
+    <header class="bg-dark text-light pb-4 d-flex justify-content-between">
+      <div class="d-flex">
+        <div>
+          <h3 class="ms-3">TV Shows</h3>
+        </div>
+        <div class="dropdown ms-5 border border-light">
+          <button
+            class="btn text-light btn-dark dropdown-toggle b-light"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Sci-Fi</button></li>
+            <li>
+              <button class="dropdown-item" type="button">Fantasy</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                Something else here
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Genres
-        </button>
-        <ul class="dropdown-menu bg-primary">
-          <li><button class="dropdown-item" type="button">Sci-Fi</button></li>
-          <li>
-            <button class="dropdown-item" type="button">Western</button>
-          </li>
-          <li>
-            <button class="dropdown-item" type="button">
-              Something else here
-            </button>
-          </li>
-        </ul>
+      <div
+        id="headerImages"
+        class="d-flex align-items-center justify-content-center text-light me-3"
+      >
+        <div class="border border-light pb-1 px-3">
+            <a href="#" class="text-decoration-none text-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-text-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          </a>
+        </div>
+        <div class="border border-light pb-1 px-3">
+            <a href="#" class="text-decoration-none text-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-fullscreen"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"
+            />
+          </svg>
+        </a>
+        </div>
       </div>
     </header>
     <main>
